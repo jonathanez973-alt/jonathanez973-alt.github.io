@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: radial-gradient(circle at top, #10306b, #050a1a 70%);
+  min-height: 100vh;
+}
+
+header { text-align: center; padding: 30px 10px 10px; }
+header h1 { margin: 0; font-size: 3em; }
+header h1 span { color: #3b9cff; }
+header p { margin: 5px 0 0; color: #9db4d6; }
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #2a6fd6;
+  border-radius: 20px;
+  background: rgba(5, 12, 30, 0.7);
+}
+
+#principal {
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 16px;
+  background: radial-gradient(circle at top, #1a4fa8, transparent 70%);
+}
+#grande-heure { font-size: 4em; font-weight: bold; }
+#grande-date { margin: 5px 0 20px; font-size: 1.2em; }
+
+.ajout { display: flex; gap: 8px; max-width: 400px; margin: 0 auto; padding: 0 10px; }
+.ajout input {
+  flex: 1; padding: 10px 16px; border-radius: 20px;
+  border: 1px solid #2a6fd6; background: #0a1630; color: white;
+}
+.ajout button {
+  padding: 10px 20px; border: none; border-radius: 20px;
+  background: #2a8bff; color: white; font-weight: bold; cursor: pointer;
+}
+
+#message { text-align: center; color: #9db4d6; min-height: 1.2em; margin: 8px 0 0; }
+
+#cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.carte {
+  position: relative;
+  height: 170px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #2a6fd6;
+  background-size: cover;
+  background-position: center;
+}
+.carte .ville { display: flex; align-items: center; gap: 8px; font-weight: bold; }
+.carte .ville img { width: 28px; border-radius: 4px; }
+.carte .heure { font-size: 2.2em; font-weight: bold; margin: 10px 0 0; }
+.carte .date { font-size: 0.9em; }
+.carte .utc {
+  position: absolute; right: 10px; bottom: 10px;
+  padding: 3px 10px; border-radius: 12px;
+  background: #0b4a99; font-size: 0.8em;
+}
+.carte .supprimer {
+  position: absolute; right: 10px; top: 8px;
+  background: none; border: none; color: #9db4d6;
+  font-size: 1.2em; cursor: pointer;
+}
+
+.info {
+  margin: 20px 0 0; padding: 12px; border-radius: 10px;
+  border: 1px solid #2a6fd6; color: #9db4d6; font-size: 0.9em;
+}
