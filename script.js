@@ -5,7 +5,7 @@ const photos = {
   "Londres": "images/londres.jpg",
   "New York": "images/newyork.jpg",
   "Tokyo": "images/tokyo.jpg",
-  "Dubai": "images/dubai.jpg"
+  "Dubaï": "images/dubai.jpg"
 };
 
 // Villes affichées au départ
